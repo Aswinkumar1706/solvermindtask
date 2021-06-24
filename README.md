@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Clone & Install
 
-copy the link `https://github.com/Aswinkumar1706/solvermindtask.git`
+copy the link `https://github.com/Aswinkumar1706/solvermindtask.git` and
 clone repositry
 
 Run `npm i`.

@@ -2,9 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
 
-## install server
+## Clone & Install
 
-copy the line `https://github.com/Aswinkumar1706/solvermindtask.git`
+copy the link `https://github.com/Aswinkumar1706/solvermindtask.git`
 clone repositry
 
 Run `npm i`.

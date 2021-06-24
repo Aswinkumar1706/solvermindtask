@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <div class="row">
+       <div class="col-md-5">
+        <ng-select 
+        [items]="users" 
+        placeholder="'Select user'" 
+        class="form-conrol"
+        bindLabel="email" 
+        bindValue="id" 
+        [multiple]="true"
+        [(ngModel)]="selectedUser"
+        [ngModelOptions]="{ standalone: true }"
+        [clearable]="true" [searchable]="true"
+        >
+</ng-select>
+       </div>
+       <div class="col-md-3">
+           <button class="btn btn-success btn-md" (click)="applyFilter()">Apply</button>
+           <button class="btn btn-default btn-md" (click)="clearFilter()">Cancel</button>
+       </div>
+    </div>
+    <hr>
+    <div class="row">
+        <app-postlist [selecteduser]="selecteduser" (reset)="resetItem($event)"></app-postlist>
+    </div>
+</div>

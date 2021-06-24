@@ -1,0 +1,32 @@
+<div class="row my-5">
+   
+    <div class="row justify-content-between">
+        <div class="col-md-3">
+           
+            <p>Filter: {{filterpostlist.length}} of {{postlist.length}} list</p>
+        </div>
+        
+        <div class="col-md-3">
+           
+            <button class="btn btn-warning btn-md" (click)="filterreset()">Reset</button>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <table  class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let post of filterpostlist">
+                <td>{{ post.id }}</td>
+                <td>{{ post.title }}</td>
+                <td>{{ post.body }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
